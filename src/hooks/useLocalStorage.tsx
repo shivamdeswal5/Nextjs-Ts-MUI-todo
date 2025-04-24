@@ -1,3 +1,5 @@
+'use client'
+
 import { useState } from "react";
 
 
@@ -19,6 +21,7 @@ const useLocalStorage = (key:string, defaultValue:[]) => {
                 return defaultValue
             }
         } catch (error) {
+            console.log("Hook Errors: ",error)
             localStorage.setItem(key, JSON.stringify(defaultValue));
             return defaultValue
         }

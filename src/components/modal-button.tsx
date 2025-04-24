@@ -3,7 +3,8 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Modal from '@mui/material/Modal';
-import FormData from './form-data';
+// import FormData from './form-data';
+import DataForm from '../components/formData'
 
 const style = {
   position: 'absolute',
@@ -43,7 +44,8 @@ export default function BasicModal() {
         sx={{width:'100%'}}
       >
         <Box sx={style}>          
-            <FormData setOpen = {setOpen} />
+            {/* <FormData setOpen = {setOpen} /> */}
+            <DataForm setOpen = {setOpen} />
         </Box>
       </Modal>
     </div>
